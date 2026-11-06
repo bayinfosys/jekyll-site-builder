@@ -1,5 +1,7 @@
 FROM ruby:3.3-slim
 
+LABEL org.opencontainers.image.source=https://github.com/bayinfosys/jekyll-site-builder
+
 RUN apt-get update \
  && apt-get install -y --no-install-recommends build-essential git \
  && rm -rf /var/lib/apt/lists/*
